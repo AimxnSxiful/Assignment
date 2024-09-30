@@ -30,7 +30,11 @@ public class LibaryManagementSys {
         library.borrowBook(user, bookTitle);
 
 
+        System.out.println("\n--- Avalailable Books ---");
+        library.listAvailableBooks();
+
         System.out.println("\n--- Overdue Books ---");
+
 
 
         scanner.close();
