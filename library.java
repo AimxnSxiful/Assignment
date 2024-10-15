@@ -19,7 +19,7 @@ public class library {
             if (book.getTitle().equals(title) && book.isAvailable()) {
                 book.setAvailable(false);
                 user.borrowBook(title);
-                System.out.println("User : " +user.getName() + " Tittle: " + title);
+                System.out.println("User : " +user.getName() + " Tittle: " + title  + " Due Date:"+ user.getDueDate());
                 return;
             }
         }
